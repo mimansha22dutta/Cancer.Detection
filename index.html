@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cancer Detection Using Machine Learning</h1>
+        <p>Fill in the following details to predict whether the tumor is benign or malignant:</p>
+
+        <form id="cancerForm">
+            <label for="clump_thickness">Clump Thickness (1-10):</label>
+            <input type="number" id="clump_thickness" name="clump_thickness" min="1" max="10" required>
+            
+            <label for="uniformity_of_cell_size">Uniformity of Cell Size (1-10):</label>
+            <input type="number" id="uniformity_of_cell_size" name="uniformity_of_cell_size" min="1" max="10" required>
+            
+            <label for="uniformity_of_cell_shape">Uniformity of Cell Shape (1-10):</label>
+            <input type="number" id="uniformity_of_cell_shape" name="uniformity_of_cell_shape" min="1" max="10" required>
+            
+            <label for="marginal_adhesion">Marginal Adhesion (1-10):</label>
+            <input type="number" id="marginal_adhesion" name="marginal_adhesion" min="1" max="10" required>
+            
+            <button type="submit">Predict</button>
+        </form>
+
+        <div id="predictionResult">
+            <h3>Prediction Result:</h3>
+            <p id="predictionText">Please enter the data and click 'Predict'.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
